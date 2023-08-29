@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemy_clone</title>
+    <link rel="stylesheet" href="U Clone.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="div">
+        <img src="./Udemy Icon.png" alt="" />
+
+        <!-- LETS DO A DROP DOWN FOR THE "CATEGORIES"-->
+        <div class="category_dropdown">
+          <div class="div">
+            <a href="#">Categories</a>
+          </div>
+
+          <div class="dropdown_content">
+            <a href="#">Development</a>
+            <a href="#">Business</a>
+            <a href="#">Finace & Accounting</a>
+            <a href="#">IT & Software</a>
+            <a href="#">Office Productivity</a>
+            <a href="#">Personal Development</a>
+            <a href="#">Design</a>
+            <a href="#">Marketting</a>
+            <a href="#">Lifestyle</a>
+            <a href="#">Photography & Videos</a>
+            <a href="#">Health & Fitness</a>
+            <a href="#">Music</a>
+            <a href="#">Teaching & Academics</a>
+          </div>
+        </div>
+
+        <div class="div2">
+          <input type="text" placeholder="search for anything..." />
+          <i class="bi bi-search Search"></i>
+        </div>
+
+        <div class="udemybusiness_dropdown">
+          <div class="udemybusinessdiv">
+            <a href="#">Udemy Business</a>
+          </div>
+
+          <div class="udemydropdown_content">
+            <h3>
+              Get your team access to over <br />
+              22,000 top Udemy courses, <br />
+              anytime, anywhere.
+            </h3>
+            <div class="buttondiv">
+              <button><h3>Try Udemy Business</h3></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="teachonudemy_dropdown">
+          <div class="teachonudemydiv">
+            <a href="#">Teach On Udemy</a>
+          </div>
+
+          <div class="teachdropdown_content">
+            <h3>
+              Turn what you know into an <br />
+              opportunity and reach <br />
+              millions around the world
+            </h3>
+            <div class="buttondiv2">
+              <button><h3>Learn More</h3></button>
+            </div>
+          </div>
+        </div>
+
+        <i class="bi bi-cart3"></i>
+      </div>
+
+      <div class="btnDiv">
+        <button class="btn1">Log in</button>
+        <button class="btn2">Sign up</button>
+        <button class="btn3"><i class="bi bi-globe Globe"></i></button>
+      </div>
+    </header>
+
+    <div class="bodydiv">
+      <img src="./udemy background.jpg" alt="image" />
+      <div class="whitediv">
+        <h1>
+          A sale as big as your <br />
+          dreams
+        </h1>
+        <p class="coursesdiv">
+          Courses start at N3,200 through Aug 31. Opportunities <br />
+          like this only come once in a season.
+        </p>
+      </div>
+    </div>
+    <section class="partners">
+      <section class="centeredPartner">
+        <p>
+          Trusted by over 14,400 companies and millions of learners around the
+          world
+        </p>
+        <section class="partnersIcon">
+          <img src="./udemyvolkswagen.svg" alt="image" />
+          <img src="./udemysamsung.svg" alt="image" />
+          <img src="./udemycisco.svg" alt="image" />
+          <img src="./udemyat&t.svg" alt="image" />
+          <img src="./udemyp&g.svg" alt="image" />
+          <img src="./udemyhewlett.svg" alt="image" />
+          <img src="./udemyciti.svg" alt="image" />
+          <img src="./udemyericsson.svg" alt="image" />
+        </section>
+      </section>
+    </section>
+
+    <section class="sectionWithPadding">
+      <section class="coursesSection">
+        <h1>A broad selection of courses</h1>
+        <p>
+          Choose from over 210,000 online video courses with new additions
+          published every month
+        </p>
+
+        <!-- WE SHOULD USE NAV FOR THE SUBJECT NAVIGATION BAR -->
+        <nav class="subjects">
+          <a href="#">Python</a>
+          <a href="#">Excel</a>
+          <a href="#">Web Development</a>
+          <a href="#">Javascript</a>
+          <a href="#">Data Science</a>
+          <a href="#">Amazon AWS</a>
+          <a href="#">Drawing</a>
+        </nav>
+
+        <section class="courses">
+          <section class="centeredCourses">
+            <h1>Expand your career opportunities with Python</h1>
+            <p>
+              Take one of Udemy’s range of Python courses and learn how to code
+              using this incredibly useful language. Its simple syntax and
+              readability makes Python perfect for Flask, Django, data science,
+              and machine learning. You’ll learn how to build everything from
+              games to sites to apps. Choose from a range of courses that will
+              appeal to both beginners and advanced developers alike...
+            </p>
+
+            <!-- ITS TIME ADD ANOTHER BBUTTON. BUT WE WANT THIS NEW BUTTON TO INHERIT
+               FEATURES FROM THE PREVIOUS ONE AND NEW FEATURES ASWELL. SO WE GIVE THIS NEW
+                BUTTON TWO CLASSES WHICH IS THE OLD BUTTON CLASS AND A NEW BUTTON CLASS.
+                 SO WE CALL THE OLD BUTTON
+               CLASS AND THE A NEW BUTTON CLASS SEPERATED WITH A SPACE AS DONE BELOW. THEN IN OUR CSS, 
+               WE WILL BE STYLING ONLY THE NEW 
+               CLASS WHICH IS .EXPLORE -->
+            <button class="btn1 explore">Explore Python</button>
+
+            <section class="courseCardSection">
+              <figure class="courseCard">
+                <div class="imgborder">
+                  <img src="./udemylaptop1.jpg" alt="course" />
+                </div>
+                <figcaption>
+                  <strong>
+                    The Complete Python Bootcamp From Zero to Hero...
+                  </strong>
+                  <small>Jose Portilla</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(475,451)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+
+              <figure class="courseCard">
+                <img src="./udemylaptop2.jpg" alt="course" />
+
+                <figcaption>
+                  <strong>
+                    Automate the Boring Stuff with Python Programming
+                  </strong>
+                  <small>AI Sweigart</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(108,888)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+
+              <figure class="courseCard">
+                <div class="imgborder">
+                  <img src="./udemyface3.jpg" alt="course" />
+                </div>
+                <figcaption>
+                  <strong>
+                    Machine Learning A-Z™: AI, Python & R + ChatGPT Bonus...
+                  </strong>
+                  <small>AI Sweigart</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(108,888)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+
+              <figure class="courseCard">
+                <div class="imgborder">
+                  <img src="./udemywoman4.jpg" alt="course" />
+                </div>
+                <figcaption>
+                  <strong>
+                    100 Days of Code: The Complete Python Pro...
+                  </strong>
+                  <small>AI Sweigart</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(108,888)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+
+              <figure class="courseCard">
+                <div class="imgborder">
+                  <img src="./udemylaptop5.jpg" alt="course" />
+                </div>
+                <figcaption>
+                  <strong>
+                    Python : Master Programming and Development with 15 Pro...
+                  </strong>
+                  <small>AI Sweigart</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(108,888)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+            </section>
+          </section>
+        </section>
+
+        <section class="testimonials">
+          <div class="testimonialsdiv2">
+          <h1>How learners like you are achieving their goals</h1>
+        <div class="divcentralize">  
+          <div class="testimonialsdiv3">
+            
+            <div class="testimonialsdiv4">
+               <div class="quote">
+<strong>&ldquo;</strong>
+</div> 
+           <p>"I am proud to say that after a few months of 
+            taking this
+              course
+          <strong>
+              ...I passed my exam and am now an AWS 
+              Certified Cloud
+              Practitioner! <br>This content was exactly what
+               the CCP exam
+              covered.</strong
+            ></p>
+            <div class="circlediv">
+              <div>WA</div>
+              <b>Will A</b>
+              </div>
+            </div>
+<a href="#"><div class="playdiv">
+ <div><i class="bi bi-play-fill"></i></div> 
+    <b>[NEW] Ultimate AWS Certified Cloud <br> Practioner - 2022</b>
+</div></a>
+
+ </div>
+         
+          
+          
+        
+
+<div class="testimonialsdiv3">
+            
+            <div class="testimonialsdiv4">
+           <div class="quote">
+<strong>&ldquo;</strong>
+</div> 
+           <p>This course helped me  
+          <strong>
+              freshen
+             up on my product manager skills and land a job at Facebook! <br></strong
+            >Thanks guys :) </p>
+            <div class="circlediv">
+              <div>RF</div>
+              <b>Ron F</b>
+              </div>
+            </div>
+<a href="#"><div class="playdiv">
+ <div><i class="bi bi-play-fill"></i></div> 
+    <b>[NEW] Ultimate AWS Certified Cloud <br> Practioner - 2022</b>
+</div></a>
+
+ </div>
+         
+          
+
+
+
+<div class="testimonialsdiv3">
+            
+            <div class="testimonialsdiv4">
+               <div class="quote">
+<strong>&ldquo;</strong>
+</div> 
+           <p>One of the best courses on management and <br> leadership I have come across so far. 
+            The <br> advice is practical, and examples highly <br> relatable.
+             
+          <strong>
+              Would help anyone become a <br> better manager.</strong
+            ></p>
+            <div class="circlediv">
+              <div>PW</div>
+              <b>Philip W</b>
+              </div>
+            </div>
+<a href="#"><div class="playdiv">
+ <div><i class="bi bi-play-fill"></i></div> 
+    <b>[NEW] Ultimate AWS Certified Cloud <br> Practioner - 2022</b>
+</div></a>
+
+ </div>
+</section>
+
+
+
+
+
+
+
+
+<div class="StudentsAreViewing1">
+  <div class="StudentsAreViewing2">
+    <div><h1>Students are viewing</h1>
+</div>
+<section class="courseCardSection">
+              <figure class="courseCard">
+                <div class="imgborder">
+                  <img src="./udemylaptop1.jpg" alt="course" />
+                </div>
+                <figcaption>
+                  <strong>
+                    The Complete Python Bootcamp From Zero to Hero...
+                  </strong>
+                  <small>Jose Portilla</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(475,451)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+
+              <figure class="courseCard">
+                <img src="./udemylaptop2.jpg" alt="course" />
+
+                <figcaption>
+                  <strong>
+                    Automate the Boring Stuff with Python Programming
+                  </strong>
+                  <small>AI Sweigart</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(108,888)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+
+              <figure class="courseCard">
+                <div class="imgborder">
+                  <img src="./udemyface3.jpg" alt="course" />
+                </div>
+                <figcaption>
+                  <strong>
+                    Machine Learning A-Z™: AI, Python & R + ChatGPT Bonus...
+                  </strong>
+                  <small>AI Sweigart</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(108,888)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+
+              <figure class="courseCard">
+                <div class="imgborder">
+                  <img src="./udemywoman4.jpg" alt="course" />
+                </div>
+                <figcaption>
+                  <strong>
+                    100 Days of Code: The Complete Python Pro...
+                  </strong>
+                  <small>AI Sweigart</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(108,888)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+
+              <figure class="courseCard">
+                <div class="imgborder">
+                  <img src="./udemylaptop5.jpg" alt="course" />
+                </div>
+                <figcaption>
+                  <strong>
+                    Python : Master Programming and Development with 15 Pro...
+                  </strong>
+                  <small>AI Sweigart</small>
+                  <small
+                    ><b>4.6</b>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <!-- I CAN USE SPAN TO GIVE SOMETHING A CLASS AS IF IT ITS A DIV AND STILL 
+                      KEEP IT ALONG THE SAME STRAIGHT HORIZONTAL LINE WITH THE PREVIOUS ONES -->
+                    <span class="aside">(108,888)</span>
+                  </small>
+                  <strong
+                    >&#8358;19,900 <del>&#8358;34,000</del>
+
+                    <!-- SEARCH HTML NAIRA SIGN. IT WILL 
+                    GIVE A CODE FOR IT. THATS THE CODE WE USED BEFORE THE DIGITS -->
+                  </strong>
+                </figcaption>
+              </figure>
+            </section>
+
+
+  </div>
+</div>
+            
+
+
+
+
+
+
+
+ <section class="topCat">
+          
+          <h2>Top categories</h2>
+        <div class="topCatCentralize">  
+          
+            <div class="topCatdivs">
+              <figure> 
+                <img src="./topcat1.jpg" alt="image">
+                <figcaption>Design</figcaption>
+              </figure>
+            </div>
+
+            <div class="topCatdivs">
+              <figure> 
+                <img src="./topcat2.jpg" alt="image">
+                <figcaption>Development</figcaption>
+              </figure>
+            </div>
+
+           
+            <div class="topCatdivs">
+              <figure> 
+                <img src="./topcat3.jpg" alt="image">
+                <figcaption>Marketing</figcaption>
+              </figure>
+            </div>
+
+             
+            <div class="topCatdivs">
+              <figure> 
+                <img src="./topcat4.jpg" alt="image">
+                <figcaption>IT and Software</figcaption>
+              </figure>
+            </div>
+
+
+            <div class="topCatdivs">
+              <figure> 
+                <img src="./topcat5.jpg" alt="image">
+                <figcaption>Personal Develpoment</figcaption>
+              </figure>
+            </div>
+
+           
+            <div class="topCatdivs">
+              <figure> 
+                <img src="./topcat6.jpg" alt="image">
+                <figcaption>Business</figcaption>
+              </figure>
+            </div>
+
+            
+            <div class="topCatdivs">
+              <figure> 
+                <img src="./topcat7.jpg" alt="image">
+                <figcaption>Photography</figcaption>
+              </figure>
+            </div>
+
+             
+            <div class="topCatdivs">
+              <figure> 
+                <img src="./topcat8.jpg" alt="image">
+                <figcaption>Music</figcaption>
+              </figure>
+            </div>
+
+
+        </div>  
+ </section>
+
+ <section>
+  <h2>Featured topics by category</h2>
+  <div class="topCatCentralize">
+
+  <h3>Development</h3>
+ <div><a href="#">Python</a> <br>
+  36,354,994 students</div>
+  
+ 
+  <div><a href="#">Web Development</a> <br>
+   11,415,615 students</div>
+   
+   <div> <a href="#">Machine Learning</a> <br>
+    7,070,015 students</div>
+Business
+IT and Software
+Design
+  
+</div>
+
+ </section>
+  </body>
+</html>

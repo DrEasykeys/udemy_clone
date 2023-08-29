@@ -1,0 +1,92 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  height: 10vh;
+  width: 70%;
+  /* The % in width is better for things like containers. vw or vh is better for the children */
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  box-shadow: rgba(0, 0, 0, 0.6) 5px 5px 10px;
+}
+
+/* LETS REDUCE THE IMAGE HEIGHT AND WIDTH */
+header img {
+  width: 10vw;
+  height: 10vh;
+}
+
+.div {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid black;
+}
+
+/* LETS STYLE THE INPUT WHICH IS THE SEARCH. KNOW IT THAT SEARCH IS AN INPUT. 
+REMEMBER THE INPUT IS ACTUALLY INSIDE THE HEQADER   */
+
+/* header input { */
+/* width: 30vw; */
+/* height: 0.5vh; */
+/* padding: 25px; */
+/* THIS IS THE TIME WHEN PADDING IS HIGHLY UNAVOIDABLE */
+/* border-radius: 20px; */
+/* outline: none; */
+/* WE'RE USING 'OUTLINE: NONE' SO THAT WHEN WERE TYPING SOMETHING IT DOESNT SHOW */
+
+/* YOU CAN ADD BACKGROUND-COLOR TO GIVE OUR INPUT A GRAY COLOR LIKE WE SEE IN UDEMY */
+/* } */
+
+/* LETS NOW PUSH THE SEARCH (i.e THE SEARCH ICON) INTO THE SEARCH  FIELD */
+
+.Search {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.div2 {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* LETS STYLE THE BUTTONS */
+.btndiv {
+  width: 20vw;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* LETS STYLE FOCUSING ON EACH BUTTON */
+.btn1 {
+  width: 100px;
+  height: 50px;
+  background-color: transparent;
+  font-weight: bold;
+}
+.btn2 {
+  width: 90px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+}
+
+.btn3 {
+  width: 60px;
+  height: 50px;
+  background-color: transparent;
+  font-weight: bold;
+}
